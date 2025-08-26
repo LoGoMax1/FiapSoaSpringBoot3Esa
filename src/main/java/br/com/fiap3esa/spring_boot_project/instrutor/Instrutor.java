@@ -1,6 +1,6 @@
-package br.com.fiap3esa.FiapSoaSpringBoot3Esa.instrutor;
+package br.com.fiap3esa.spring_boot_project.instrutor;
 
-import br.com.fiap3esa.FiapSoaSpringBoot3Esa.endereco.Endereco;
+import br.com.fiap3esa.spring_boot_project.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -26,13 +26,29 @@ public class Instrutor {
     Especialidade especialidade;
 
     @Embedded
-    Endereco endereco;
+    Endereco enderco;
 
     public Instrutor(DadosCadastroInstrutor dados) {
         this.nome = dados.nome();
         this.email = dados.email();
         this.cnh = dados.cnh();
         this.especialidade = dados.especialidade();
-        this.endereco = new Endereco(dados.endereco());
+        this.enderco = new Endereco(dados.endereco());
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCnh() {
+        return cnh;
+    }
+
+    public Especialidade getEspecialidade() {
+        return especialidade;
     }
 }

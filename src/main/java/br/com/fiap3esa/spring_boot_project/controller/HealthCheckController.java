@@ -1,15 +1,15 @@
-package br.com.fiap3esa.FiapSoaSpringBoot3Esa.controller;
+package br.com.fiap3esa.spring_boot_project.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/healthCheck")
+@RequestMapping("/health-check")
 public class HealthCheckController {
 
-    @GetMapping
-    public String healthcheck(){
-        return "Verificação de Integridade do Spring Boot, Turma 3ESA";
+    @GetMapping()
+    public String HealthCheck() {
+        return "API 3ESA OK!";
     }
 }

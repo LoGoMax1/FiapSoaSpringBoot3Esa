@@ -1,4 +1,5 @@
 CREATE TABLE instrutores(
+
     id bigint NOT NULL AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
@@ -6,11 +7,12 @@ CREATE TABLE instrutores(
     especialidade VARCHAR(100) NOT NULL,
     logradouro VARCHAR(100) NOT NULL,
     numero VARCHAR(20),
-    Complemento VARCHAR(100),
+    complemento VARCHAR(100),
     bairro VARCHAR(100) NOT NULL,
     cidade VARCHAR(100) NOT NULL,
     uf VARCHAR(2) NOT NULL,
     cep VARCHAR(9) NOT NULL,
 
     PRIMARY KEY(id)
+
 )

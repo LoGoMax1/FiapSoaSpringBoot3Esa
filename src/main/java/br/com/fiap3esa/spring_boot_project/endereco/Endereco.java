@@ -1,4 +1,4 @@
-package br.com.fiap3esa.FiapSoaSpringBoot3Esa.endereco;
+package br.com.fiap3esa.spring_boot_project.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
